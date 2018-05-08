@@ -2,13 +2,13 @@
   "name": "news-parser",
   "version": "0.1.0",
   "description": "Express server for parsing web pages with Readability.js",
-  "main": "js/main.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joejacobs/news-parser.git"
   },
   "author": "Joe Jacobs <joe@hazardcell.com> (https://hazardcell.com/)",
-  "license": "BSD-3",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/joejacobs/news-parser/issues"
   },
