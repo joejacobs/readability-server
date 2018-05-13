@@ -10,4 +10,6 @@ Readability.js.
 
 License
 -------
-Copyright 2018 Joe Jacobs. Released under a [3-clause BSD License](LICENSE).
+Copyright (c) 2018, Joe Jacobs. All rights reserved.
+
+Released under a [3-clause BSD License](LICENSE).
