@@ -13,10 +13,10 @@
     "url": "https://github.com/joejacobs/news-parser/issues"
   },
   "dependencies": {
-    "express": "^4.16.0",
-    "jsdom": "^11.0.0",
+    "express": "^4.17.1",
+    "jsdom": "^11.12.0",
     "readability": "git+https://git@github.com/mozilla/readability.git",
-    "request": "^2.85.0"
+    "request": "^2.88.0"
   },
   "homepage": "https://albus.xyz/"
 }
