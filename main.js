@@ -37,7 +37,8 @@ function ReadabilityServer() {
                 resOut.status(500).json({error: error});
             } else {
                 if (resIn.statusCode == 200) {
-                    // all ok, create DOM with jsdom and parse with readability
+                    // all ok, create DOM with jsdom, sanitize html dompurify
+                    // and parse with readability
                     var dom = new jsdom.JSDOM(body);
                     var DOMPurify = dompurify(dom.window);
                     var docElem = dom.window.document.documentElement;
