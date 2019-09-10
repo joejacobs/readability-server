@@ -13,6 +13,7 @@
     "url": "https://github.com/joejacobs/news-parser/issues"
   },
   "dependencies": {
+    "dompurify": "^1.0.11",
     "express": "^4.17.1",
     "jsdom": "^11.12.0",
     "readability": "git+https://git@github.com/mozilla/readability.git",

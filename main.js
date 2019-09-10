@@ -1,5 +1,6 @@
 "use strict";
 
+const dompurify = require("dompurify");
 const Express = require("express");
 const jsdom = require("jsdom");
 const Logger = require("./logger");
@@ -38,6 +39,10 @@ function ReadabilityServer() {
                 if (resIn.statusCode == 200) {
                     // all ok, create DOM with jsdom and parse with readability
                     var dom = new jsdom.JSDOM(body);
+                    var DOMPurify = dompurify(dom.window);
+                    var docElem = dom.window.document.documentElement;
+                    docElem.innerHTML = DOMPurify.sanitize(docElem.innerHTML);
+
                     var article = new Readability(dom.window.document).parse();
                     logger.log("Successfully parsed " + reqIn.params.url);
                     resOut.json(article);
